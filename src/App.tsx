@@ -4,7 +4,11 @@ function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
   return (
     <div>
-      <ListGroup heading="cities" items={items} />
+      <ListGroup
+        heading="cities"
+        items={items}
+        onSelectItem={(item) => console.log(item)}
+      />
     </div>
   );
 }
