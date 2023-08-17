@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
         items={items}
         onSelectItem={(item) => console.log(item)}
       />
+      <Button onClick={() => console.log("hkbhjsdbkfjba")} color="primary">
+        click here
+      </Button>
     </div>
   );
 }
