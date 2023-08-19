@@ -1,7 +1,8 @@
 interface Props {
   children: string;
+  onClose: () => void;
 }
-function Alert({ children }: Props) {
+function Alert({ children, onClose }: Props) {
   return (
     <div
       className="alert alert-warning alert-dismissible fade show"
@@ -13,6 +14,7 @@ function Alert({ children }: Props) {
         className="btn-close"
         data-bs-dismiss="alert"
         aria-label="Close"
+        onClick={onClose}
       ></button>
     </div>
   );
