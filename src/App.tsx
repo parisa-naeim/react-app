@@ -1,4 +1,4 @@
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import { useState } from "react";
